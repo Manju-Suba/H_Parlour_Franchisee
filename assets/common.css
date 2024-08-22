@@ -1,0 +1,66 @@
+.card .card-body {    padding:0 0 1.88rem 0;}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #b3bdeb;
+}
+
+table.dataTable thead>tr>th.sorting_asc#score, table.dataTable thead>tr>th.sorting_desc#score, table.dataTable thead>tr>th.sorting#score, table.dataTable thead>tr>td.sorting_asc#score, table.dataTable thead>tr>td.sorting_desc#score, table.dataTable thead>tr>td.sorting#score {
+    padding-right: 65px;
+}
+
+/* tooltip hover write */
+.btn-round {
+    color: #ffffff;
+    position: relative;
+    border-bottom: 1px dotted black;
+}
+
+
+.btn-round .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.btn-round .tooltiptext#fcc_color{
+    width: 190px;
+    left:1px;
+}
+.btn-round .tooltiptext#fcc_color::after {
+    left: 40%;
+}
+
+.btn-round .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.btn-round:hover .tooltiptext {
+    visibility: visible;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .btn-round .tooltiptext#fcc_color{
+        width: 190px;
+        left:30px;
+    }
+    .btn-round .tooltiptext#fcc_color::after {
+        left: 27%;
+    }
+}
